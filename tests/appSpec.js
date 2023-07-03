@@ -97,7 +97,8 @@ describe("Building player blocks", function () {
         <div class="name">${players[0].name}</div>
         <div class="strength">${players[0].strength}</div>
     </div>`;
-    expectedFragment = expectedFragment.replace(/\s/g, "");
+
+    expectedFragment = fragment.replace(/\s/g, "");
 
     expect(fragment).toBe(expectedFragment);
   })
